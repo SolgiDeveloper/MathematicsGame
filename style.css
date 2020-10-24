@@ -7,7 +7,10 @@ html {
   background: radial-gradient(circle, #4a7c59, #205072);
 }
 
+
+
 body {
+
   display: flex;
   flex-direction: row;
   border: 2px solid;
@@ -165,4 +168,26 @@ body {
 #startReset:active {
   margin-top: 16px;
   margin-bottom: 8px;
+}
+
+#gameOver {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  height: 150px;
+  padding: 10px;
+  background: linear-gradient(#f0612d, #fa9976);
+  box-shadow: 0 0 15px 15px #f1784c;
+  -webkit-box-shadow: 0 0 15px 15px #f1784c;
+  -moz-box-shadow: 0 0 15px 15px #f1784c;
+  font-size: 40px;
+  font-family: cursive;
+  color: #eef1ef;
+  text-align: center;
+  border-radius: 10px;
+  text-transform: uppercase;
+  position: fixed;
+  align-self: center;
+  z-index: 1;
+  display: none;
 }
