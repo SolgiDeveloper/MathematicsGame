@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+}
+
+html {
+  height: 100%;
+  background: radial-gradient(circle, #4a7c59, #205072);
+}
+
+body {
+  display: flex;
+  flex-direction: row;
+  border: 2px solid;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+#container {
+  display: flex;
+  flex-direction: column;
+  height: 500px;
+  width: 600px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px 10px #4a7c59;
+  background-color: #cff4d2;
+}
+
+#up {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#score {
+  background-color: #5c374c;
+  color: #cff4d2;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 0 2px 4px #985277;
+}
+
+#correct {
+  background-color: #4a7c59;
+  color: #cff4d2;
+  padding: 12px;
+  border-radius: 10px;
+  display: none;
+}
