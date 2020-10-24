@@ -24,6 +24,8 @@ body {
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 0 10px 10px #4a7c59;
+  -webkit-box-shadow: 0 0 10px 10px #4a7c59;
+  -moz-box-shadow: 0 0 10px 10px #4a7c59;
   background-color: #cff4d2;
 }
 
@@ -39,6 +41,8 @@ body {
   padding: 10px;
   border-radius: 10px;
   box-shadow: 0 0 2px 4px #985277;
+  -webkit-box-shadow: 0 0 2px 4px #985277;
+  -moz-box-shadow: 0 0 2px 4px #985277;
 }
 
 #alarm {
@@ -49,11 +53,25 @@ body {
   display: none;
 }
 
+#timeRemaining {
+  background-color: #5c374c;
+  color: #cff4d2;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 0 2px 4px #985277;
+  -webkit-box-shadow: 0 0 2px 4px #985277;
+  -moz-box-shadow: 0 0 2px 4px #985277;
+  /* visibility: hidden; */
+  display: none;
+}
+
 #question {
   margin-top: 15px;
   height: 200px;
   background-color: #ce6a85;
   box-shadow: 0 0 3px 3px #985277;
+  -webkit-box-shadow: 0 0 3px 3px #985277;
+  -moz-box-shadow: 0 0 3px 3px #985277;
   border-radius: 10px;
   font-size: 140px;
   color: #3b2431;
@@ -66,10 +84,12 @@ body {
   height: 40px;
   background-color: #cc4d6f;
   box-shadow: 0 0 3px 3px #985277;
+  -webkit-box-shadow: 0 0 3px 3px #985277;
+  -moz-box-shadow: 0 0 3px 3px #985277;
   border-radius: 10px;
   color: #cff4d2;
   text-align: center;
-  font-size: 25px;
+  font-size: 1.5rem;
   font-family: cursive;
 }
 
@@ -90,19 +110,59 @@ body {
 }
 
 .box {
-  margin: 5px;
+  margin: 5px 10px;
   background-color: #f87f52;
   flex-grow: 1;
   border-radius: 10px;
   box-shadow: 0 3px 3px 3px #f0612d;
+  -webkit-box-shadow: 0 3px 3px 3px #f0612d;
+  -moz-box-shadow: 0 3px 3px 3px #f0612d;
   text-align: center;
   color: rgb(140, 34, 34);
   font-size: 50px;
   line-height: 105px;
   font-family: cursive;
   cursor: pointer;
+  transition: all 0.2s;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -o-transition: all 0.2s;
 }
 
 .box:hover {
   background-color: #fa9976;
+}
+
+.box:active {
+  margin-top: 8px;
+  margin-bottom: 2px;
+}
+
+#startReset {
+  margin: 12px;
+  padding: 15px;
+  align-self: center;
+  border-radius: 10px;
+  background-color: #1e8cbf;
+  box-shadow: 0 3px 3px 3px #006494;
+  -webkit-box-shadow: 0 3px 3px 3px #006494;
+  -moz-box-shadow: 0 3px 3px 3px #006494;
+  text-align: center;
+  color: #cff4d2;
+  font-size: 20px;
+  font-family: cursive;
+  cursor: pointer;
+  transition: all 0.2s;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -o-transition: all 0.2s;
+}
+
+#startReset:hover {
+  background-color: #089ee4;
+}
+
+#startReset:active {
+  margin-top: 16px;
+  margin-bottom: 8px;
 }
