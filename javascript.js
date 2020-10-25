@@ -6,14 +6,16 @@ let timerValue = document.getElementById("timeRemainingValue");
 let playerScore;
 let playing = false;
 startBtn.onclick = function () {
-  if (playing) {
-    location.reload();
-    startBtn.innerHTML = "Start Game";
+  if (playing == true) {
+    location.reload(); // reload page
+    // startBtn.innerHTML = "Start Game";
     playing = false;
   } else {
-    score.innerHTML = 0;
+    playing = true;
     playerScore = 0;
-    timer.style.display = 'inline';
+    score.innerHTML = playerScore;
+    timer.style.display = 'block';
+    startBtn.innerHTML = "Reset Game";
     start();
   }
 };
@@ -30,8 +32,8 @@ function start() {
         + "<br>"
         + "your score is "
         + playerScore;
-      gameOver.style.display = 'inline';
-      startBtn.innerHTML = "Reset Game";
+      gameOver.style.display = 'block';
+
       playing = true;
     }
     t--;
