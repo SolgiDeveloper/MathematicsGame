@@ -149,13 +149,14 @@ body {
 #startReset {
   margin: 12px;
   padding: 15px;
+  outline: none;
   align-self: center;
+  border: none;
   border-radius: 10px;
   background-color: #1e8cbf;
   box-shadow: 0 3px 3px 3px #006494;
   -webkit-box-shadow: 0 3px 3px 3px #006494;
   -moz-box-shadow: 0 3px 3px 3px #006494;
-  text-align: center;
   color: #cff4d2;
   font-size: 20px;
   font-family: cursive;
