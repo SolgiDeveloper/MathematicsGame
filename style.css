@@ -5,6 +5,9 @@
 html {
   height: 100%;
   background: radial-gradient(circle, #4a7c59, #205072);
+  background: -webkit-radial-gradient(circle, #4a7c59, #205072);
+  background: -o-radial-gradient(circle, #4a7c59, #205072);
+  background: -moz-radial-gradient(circle, #4a7c59, #205072);
 }
 
 body {
@@ -137,11 +140,11 @@ body {
   -o-transition: all 0.2s;
 }
 
-.box:hover {
-  background-color: #fa9976;
-}
+/* .box:hover {
+} */
 
 .box:active {
+  background-color: #fa9976;
   margin-top: 8px;
   margin-bottom: 2px;
 }
@@ -183,6 +186,9 @@ body {
   height: 150px;
   padding: 10px;
   background: linear-gradient(#f0612d, #fa9976);
+  background: -webkit-linear-gradient(#f0612d, #fa9976);
+  background: -o-linear-gradient(#f0612d, #fa9976);
+  background: -moz-linear-gradient(#f0612d, #fa9976);
   box-shadow: 0 0 15px 15px #f1784c;
   -webkit-box-shadow: 0 0 15px 15px #f1784c;
   -moz-box-shadow: 0 0 15px 15px #f1784c;
