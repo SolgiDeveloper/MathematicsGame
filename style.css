@@ -7,13 +7,10 @@ html {
   background: radial-gradient(circle, #4a7c59, #205072);
 }
 
-
-
 body {
 
   display: flex;
   flex-direction: row;
-  border: 2px solid;
   justify-content: center;
   align-items: center;
   height: 100%;
@@ -48,8 +45,16 @@ body {
   -moz-box-shadow: 0 0 2px 4px #985277;
 }
 
-#alarm {
+#correct {
   background-color: #4a7c59;
+  color: #cff4d2;
+  padding: 12px;
+  border-radius: 10px;
+  display: none;
+}
+
+#tryAgain {
+  background-color: #b10b0b;
   color: #cff4d2;
   padding: 12px;
   border-radius: 10px;
